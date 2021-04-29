@@ -36,15 +36,21 @@ function multiply(a, b) { //eslint-disable-line
     let output=a*b;
 return[output,`The product of ${a} and ${b} is ${output}.`]
 
+
+
 function multiply(a, b) { 
     let output=a*b;
 return[output,`The product of ${a} and ${b} is ${output}.`]
+
 
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
+
+testMultiply(5,9);
+
 testMultiply(5,9)
 
 
@@ -62,6 +68,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+function sumAndMultiply(a, b, c) { //eslint-disable-line
 function sumAndMultiply(a, b, c) { 
     let output1= sum(a,b) ;
 // console.log(' output1 ' , output1);
@@ -103,6 +110,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
+function sumArray(sumArr) { //eslint-disable-line
+
+    let output = sum(testArray[0] , testArray[1] )
 function sumArray(sumArr) {  let output = sum(testArray[0] , testArray[1] )
     //   console.log(output);
     let output1 = sum (output[0] , testArray[2])
@@ -139,6 +149,11 @@ function multiplyArray(multArr) {
 
 
 
+    let output = multiply(testArray[0] , testArray[1] )
+    // console.log(output)
+    let output1 =  multiply(output[0] , testArray[2])
+    //  console.log (output1);
+     return[ output1[0], `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${output1[0]}.`]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
