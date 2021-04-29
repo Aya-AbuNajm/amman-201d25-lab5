@@ -31,15 +31,23 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+
+function multiply(a, b) { //eslint-disable-line
+    let output=a*b;
+return[output,`The product of ${a} and ${b} is ${output}.`]
+
 function multiply(a, b) { 
     let output=a*b;
 return[output,`The product of ${a} and ${b} is ${output}.`]
+
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
-testMultiply(5,9);
+testMultiply(5,9)
+
+
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -64,6 +72,16 @@ let output4 = multiply(output3[0] ,c);
 
 return[output2[0],output4[0],`${a} and ${b} and ${c} sum to ${output2[0]}.` ,`The product of ${a} and ${b} and ${c} is ${output4[0]}.` ] 
 
+    let output1= sum(a,b) ;
+// console.log(' output1 ' , output1);
+let output2 = sum (output1[0] , c);
+// console.log(' output2 ', output2);
+let output3 = multiply(a ,b);
+let output4 = multiply(output3[0] ,c);
+
+return[output2[0],output4[0],`${a} and ${b} and ${c} sum to ${output2[0]}.` ,`The product of ${a} and ${b} and ${c} is ${output4[0]}.` ] 
+
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
